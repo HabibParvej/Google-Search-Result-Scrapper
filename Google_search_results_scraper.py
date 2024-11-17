@@ -3,7 +3,7 @@ import pandas as pd
 
 def google_search_api(query, num_results=10):
     # Google Developer api key
-    api_key = "AIzaSyAxxLLWotcN1IswXxXjjeGaRDDonK1wgtM"
+    api_key = "API_KEY"
     # Custom google search engine cx
     cse_id = "2784d8970ce3f41b1"
     
@@ -11,7 +11,7 @@ def google_search_api(query, num_results=10):
     query = requests.utils.quote(query)
     
     # Construct the API URL
-    url = f"https://www.googleapis.com/customsearch/v1?q={query}&key={api_key}&cx={cse_id}"
+    url = f"CUSTOM ENGINE GOOGLE URL "
     
     # Make the request to the Google Custom Search API
     response = requests.get(url)
